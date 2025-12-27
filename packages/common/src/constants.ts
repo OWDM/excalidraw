@@ -130,6 +130,11 @@ export const FONT_FAMILY = {
   "Comic Shanns": 8,
   "Liberation Sans": 9,
   Assistant: 10,
+  Amiri: 11,
+  Lalezar: 12,
+  "Scheherazade New": 13,
+  "Scheherazade New Medium": 14,
+  "Scheherazade New Bold": 15,
 };
 
 // Segoe UI Emoji fails to properly fallback for some glyphs: ∞, ∫, ≠

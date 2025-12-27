@@ -30,15 +30,20 @@ import type { ValueOf } from "@excalidraw/common/utility-types";
 
 import type { Scene } from "@excalidraw/element";
 
+import { AmiriFontFaces } from "./Amiri";
 import { CascadiaFontFaces } from "./Cascadia";
 import { ComicShannsFontFaces } from "./ComicShanns";
 import { EmojiFontFaces } from "./Emoji";
 import { ExcalidrawFontFace } from "./ExcalidrawFontFace";
 import { ExcalifontFontFaces } from "./Excalifont";
 import { HelveticaFontFaces } from "./Helvetica";
+import { LalezarFontFaces } from "./Lalezar";
 import { LiberationFontFaces } from "./Liberation";
 import { LilitaFontFaces } from "./Lilita";
 import { NunitoFontFaces } from "./Nunito";
+import { ScheherazadeNewFontFaces } from "./ScheherazadeNew";
+import { ScheherazadeNewBoldFontFaces } from "./ScheherazadeNewBold";
+import { ScheherazadeNewMediumFontFaces } from "./ScheherazadeNewMedium";
 import { VirgilFontFaces } from "./Virgil";
 import { XiaolaiFontFaces } from "./Xiaolai";
 
@@ -381,15 +386,20 @@ export class Fonts {
       Fonts.register.call(fonts, family, metadata, ...fontFacesDescriptors);
     };
 
+    init("Amiri", ...AmiriFontFaces);
     init("Cascadia", ...CascadiaFontFaces);
     init("Comic Shanns", ...ComicShannsFontFaces);
     init("Excalifont", ...ExcalifontFontFaces);
     // keeping for backwards compatibility reasons, uses system font (Helvetica on MacOS, Arial on Win)
     init("Helvetica", ...HelveticaFontFaces);
+    init("Lalezar", ...LalezarFontFaces);
     // used for server-side pdf & png export instead of helvetica (technically does not need metrics, but kept in for consistency)
     init("Liberation Sans", ...LiberationFontFaces);
     init("Lilita One", ...LilitaFontFaces);
     init("Nunito", ...NunitoFontFaces);
+    init("Scheherazade New", ...ScheherazadeNewFontFaces);
+    init("Scheherazade New Bold", ...ScheherazadeNewBoldFontFaces);
+    init("Scheherazade New Medium", ...ScheherazadeNewMediumFontFaces);
     init("Virgil", ...VirgilFontFaces);
 
     // fallback font faces

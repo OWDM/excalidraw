@@ -111,6 +111,46 @@ export const FONT_METADATA: Record<number, FontMetadata> = {
     },
     private: true,
   },
+  [FONT_FAMILY.Amiri]: {
+    metrics: {
+      unitsPerEm: 1000,
+      ascender: 1178,
+      descender: -472,
+      lineHeight: 1.35,
+    },
+  },
+  [FONT_FAMILY.Lalezar]: {
+    metrics: {
+      unitsPerEm: 1000,
+      ascender: 1100,
+      descender: -400,
+      lineHeight: 1.2,
+    },
+  },
+  [FONT_FAMILY["Scheherazade New"]]: {
+    metrics: {
+      unitsPerEm: 2048,
+      ascender: 1900,
+      descender: -900,
+      lineHeight: 1.4,
+    },
+  },
+  [FONT_FAMILY["Scheherazade New Medium"]]: {
+    metrics: {
+      unitsPerEm: 2048,
+      ascender: 1900,
+      descender: -900,
+      lineHeight: 1.4,
+    },
+  },
+  [FONT_FAMILY["Scheherazade New Bold"]]: {
+    metrics: {
+      unitsPerEm: 2048,
+      ascender: 1900,
+      descender: -900,
+      lineHeight: 1.4,
+    },
+  },
   [FONT_FAMILY_FALLBACKS.Xiaolai]: {
     metrics: {
       unitsPerEm: 1000,
